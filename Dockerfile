@@ -83,7 +83,7 @@ RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
 # initial config
 RUN rabbitmq-plugins enable rabbitmq_management rabbitmq_mqtt 
-RUN rabbitmqctl change_password guest jewoo6918
+RUN rabbitmqctl change_password guest jewoo6h24
 
 EXPOSE 4369 5671 5672 25672 1883  15672
 CMD ["rabbitmq-server"]
