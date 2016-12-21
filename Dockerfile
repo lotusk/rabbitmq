@@ -85,7 +85,7 @@ ENTRYPOINT ["docker-entrypoint.sh"]
 RUN rabbitmq-plugins enable rabbitmq_management rabbitmq_mqtt 
 RUN rabbitmqctl change_password guest jewoo6h24
 RUN rabbitmqctl add_user server shine!@#
-RUN rabbitmqctl add_user shine shine!@#
+RUN rabbitmqctl add_user shine X8b56FQnXK
 RUN rabbitmqctl set_permissions -p / server ".*" ".*" ".*"
 RUN rabbitmqctl set_permissions -p / shine ".*" ".*" ".*"
 
