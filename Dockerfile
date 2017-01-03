@@ -83,11 +83,11 @@ RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
 # initial config
 RUN rabbitmq-plugins enable rabbitmq_management rabbitmq_mqtt 
-RUN rabbitmqctl change_password guest jewoo6h24
-RUN rabbitmqctl add_user server shine!@#
-RUN rabbitmqctl add_user shine X8b56FQnXK
-RUN rabbitmqctl set_permissions -p / server ".*" ".*" ".*"
-RUN rabbitmqctl set_permissions -p / shine ".*" ".*" ".*"
+#RUN rabbitmqctl change_password guest jewoo6h24
+#RUN rabbitmqctl add_user server shine!@#
+#RUN rabbitmqctl add_user shine X8b56FQnXK
+#RUN rabbitmqctl set_permissions -p / server ".*" ".*" ".*"
+#RUN rabbitmqctl set_permissions -p / shine ".*" ".*" ".*"
 
 
 EXPOSE 4369 5671 5672 25672 1883  15672
